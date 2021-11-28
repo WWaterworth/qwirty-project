@@ -1,0 +1,118 @@
+.main-nav,
+.sub-nav {
+    display: flex;
+}
+
+.sub-nav {
+    align-items: center;
+    padding: 7px;
+    margin-bottom: 5px;
+}
+
+.main-nav {
+    background-color: #44b;
+    justify-content: space-between;
+    font-family: 'Dosis';
+    padding: 2px 5px;
+    font-size: 1.2em
+}
+
+.full-width {
+    display: none;
+}
+
+.short-width {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .horizontal.nav-list.full-width {
+      display: none;
+    }
+  
+    .horizontal.nav-list.short-width {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .horizontal.nav-list.full-width {
+      display: flex;
+    }
+  
+    .horizontal.nav-list.short-width {
+      display: none;
+    }
+  }
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav-list a {
+    padding: 5px;
+    border-right: 1px solid gray;
+    color: white;
+    font-size: .8em;
+}
+
+.nav-list li:last-of-type a {
+    border-right: none;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.search-form input {
+    flex-grow: 1;
+    border-style: none;
+    border-bottom: 1px solid #44b;
+    height: 30px;
+}
+
+.search-form button {
+    border: none;
+    background-color: #44b;
+    color: white;
+}
+
+.company-name {
+    font-size: 2.5em;
+    padding: 5px 5px 0 10px;
+    padding: 0 2em;
+    font-size: 2.3em;
+    font-family:'IM Fell Great Primer', serif;
+    color: #44b;
+}
+
+.credit-offer {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    background-color: red;
+    margin: 10px;
+    font-size: 18px;
+    height: 23px;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed';
+    font-size: 1.2em;
+    flex-shrink: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
